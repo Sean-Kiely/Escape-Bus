@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+
+<h2>You are currently here:</h2>
+<p><%= @location.my_location %></p>
+
+<h2>Nearest buses are</h2>
+<% if @nearby_buses.empty? %>
+  <p>not nearby</p>
+<% end %>
+
+<% @nearby_buses.each do |bus| %>
+  <p>Longitude: <%= bus['LONGITUDE']%></p>
+  <p>Route: <%= bus['ROUTE']%></p>
+<% end %>
+
+<%= link_to 'Edit', edit_location_path(@location) %>
+<%= link_to 'Back', locations_path %>
