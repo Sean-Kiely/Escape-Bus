@@ -3,11 +3,10 @@
 one:
   address: MyString
   city: MyString
-  latitude: 1.5
-  longitude: 1.5
+
 
 two:
   address: MyString
   city: MyString
-  latitude: 1.5
-  longitude: 1.5
+  latitude: 33.7858
+  longitude: 84.6695

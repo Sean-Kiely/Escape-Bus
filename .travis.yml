@@ -1,0 +1,10 @@
+branches:
+  only:
+    - 'master'
+language: ruby
+rvm:
+  -2.1.5
+
+script:
+  - bundle exec rake db:setup
+  - bundle exec rake test
